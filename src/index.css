@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #0b0c10;
+  --color-dark-card: #12141c;
+  --color-smart-red: #e50914;
+  --color-smart-red-hover: #b20710;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
