@@ -8,10 +8,12 @@ const Packages = () => {
   const packagesData = [
     {
       badge: "SMARTFIX",
-      title: "BASIC",
+      // Glavna reč i tip rešenja odvojeni radi lakšeg stilizovanja i maksimalnog fokusiranja klijenta
+      hookWord: "STEINSCHLAG",
+      titleSuffix: "Lösung Basic",
       features: [
-        "Smart Repair (Steinschlag)",
-        "Smart Clean (Glasreinigung)",
+        "Smart Repair bei Steinschlag",
+        "Schnelle Reparatur in unter 30 Minuten",
         "Smart Check (Gummi & Flüssigkeiten)",
         "0 € mit Teilkasko (179,49 € ohne Versicherung)"
       ],
@@ -21,11 +23,12 @@ const Packages = () => {
     },
     {
       badge: "SMARTFIX",
-      title: "CLEAR",
+      hookWord: "AUSTAUSCH",
+      titleSuffix: "Lösung Clear",
       features: [
         "Hochwertiger Scheibenaustausch",
+        "Perfekte Kalibrierung der Kamera-Systeme",
         "Clean Plus (alle Scheiben + Innenraum)",
-        "Premium Check (Wischer, Flüssigkeit, Reifen)",
         "Empfohlen: HX AQUA + Bosch Wischer"
       ],
       price: "0 €",
@@ -34,13 +37,14 @@ const Packages = () => {
     },
     {
       badge: "SMARTFIX",
-      title: "ELITE",
-      subTitle: "24H SERVICE",
+      hookWord: "SEITEN- & HECKSCHEIBE",
+      titleSuffix: "Lösung Elite 24h",
+      subTitle: "24H EMERGENCY SERVICE",
       features: [
-        "24h Emergency Service (7 Tage/Woche)",
+        "24h Notdienst (7 Tage die Woche erreichbar)",
+        "Sofortiger Austausch vor Ort oder mobil",
         "Full Clean (alle Scheiben + Cockpit)",
-        "Elite Check (kompletter Fahrzeug-Check)",
-        "Empfohlen: Deluxe Elite Upgrade"
+        "Direkte Abrechnung mit der Versicherung"
       ],
       price: "0 €",
       priceSub: "oder Selbstbeteiligung",
@@ -64,44 +68,51 @@ const Packages = () => {
         {packagesData.map((pkg, index) => (
           <div 
             key={index}
-            className="relative bg-[#12141c] border border-gray-800/80 rounded-2xl overflow-hidden min-h-[420px] flex flex-col justify-between p-6 md:p-8 hover:border-smart-red/30 transition-all duration-300 group"
+            className="relative bg-[#12141c] border border-gray-800/80 rounded-2xl overflow-hidden min-h-[440px] flex flex-col justify-between p-6 md:p-8 hover:border-smart-red/30 transition-all duration-300 group"
           >
-            {/* POZADINSKA SLIKA ZA DESNU STRANU KARTICE - PROŠIRENA NA 65% */}
+            {/* POZADINSKA SLIKA */}
             <div 
               className="absolute top-0 right-0 w-[65%] h-full bg-cover bg-[position:40%_center] opacity-35 group-hover:opacity-50 transition-opacity duration-300 pointer-events-none z-0"
               style={{ 
                 backgroundImage: `url(${pkg.bgImage})`,
-                // Gradijent je prilagođen tako da slika prelazi u crno tek na samom lijevom rubu svog kontejnera
                 maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%)',
                 WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%)'
               }}
             ></div>
 
-            {/* SADRŽAJ KARTICE (Iznad slike) */}
+            {/* SADRŽAJ KARTICE */}
             <div className="relative z-10">
               {/* Mali crveni brend tag */}
               <span className="inline-block bg-smart-red/10 border border-smart-red/30 text-smart-red text-[10px] font-black tracking-wider px-2 py-0.5 rounded mb-3">
                 {pkg.badge}
               </span>
 
-              {/* Naslov paketa */}
-              <h3 className="text-2xl md:text-3xl font-black tracking-tight text-white mb-1">
-                {pkg.title}
+              {/* RESTRUKTURIRANI NASLOV KOJI ISTIČE HOOK REČ */}
+              <h3 className="flex flex-col text-white mb-2 leading-tight">
+                {/* Glavna udarna reč - Ogromna i uočljiva */}
+                <span className="text-3xl md:text-4xl font-black tracking-tight text-white uppercase break-words">
+                  {pkg.hookWord}
+                </span>
+                {/* Pod-naslov rešenja - Manji i suptilniji kako ne bi odvlačio pažnju */}
+                <span className="text-sm font-bold text-gray-400 mt-1">
+                  {pkg.titleSuffix}
+                </span>
               </h3>
               
-              {/* Opcioni podnaslov (za Elite paket) */}
+              {/* Opcioni podnaslov za Elite */}
               {pkg.subTitle && (
-                <p className="text-[11px] font-black tracking-widest text-gray-400 uppercase mb-4">
+                <p className="text-[10px] font-black tracking-widest text-smart-red uppercase mb-4">
                   {pkg.subTitle}
                 </p>
               )}
 
-              {/* Lista funkcionalnosti */}
-              <ul className="space-y-2.5 mt-4">
+              {/* Lista funkcionalnosti sa smanjenim tekstom (kako bi naslov dominirao) */}
+              <ul className="space-y-2.5 mt-5">
                 {pkg.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start space-x-2 text-xs text-gray-300 font-medium max-w-[75%]">
-                    <FaCheck className="text-smart-red text-[10px] mt-0.5 shrink-0" />
-                    <span>{feature}</span>
+                  <li key={idx} className="flex items-start space-x-2 text-[11px] text-gray-400 font-medium max-w-[70%] leading-relaxed">
+                    <FaCheck className="text-smart-red text-[9px] mt-0.5 shrink-0" />
+                    {/* Prva stavka u listi je malo svetlija radi SEO strukture */}
+                    <span className={idx === 0 ? "text-gray-200 font-semibold" : ""}>{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -109,7 +120,6 @@ const Packages = () => {
 
             {/* DONJI DEO (Cena i dugme) */}
             <div className="relative z-10 flex items-end justify-between mt-8 pt-4 border-t border-gray-800/40">
-              {/* Cena */}
               <div>
                 <div className="text-3xl font-black text-smart-red leading-none mb-1">
                   {pkg.price}
@@ -119,8 +129,7 @@ const Packages = () => {
                 </div>
               </div>
 
-              {/* Dugme "Mehr erfahren" */}
-              <button className="flex items-center space-x-2 bg-smart-red hover:bg-smart-red-hover text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-lg shadow-smart-red/10">
+              <button className="flex items-center space-x-2 bg-smart-red hover:bg-smart-red-hover text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-lg shadow-smart-red/10 active:scale-95">
                 <span>Mehr erfahren</span>
                 <FaArrowRight className="text-[10px]" />
               </button>
