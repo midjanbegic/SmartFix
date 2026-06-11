@@ -1,9 +1,11 @@
 import React from 'react';
-import { FaCalendarAlt, FaCamera } from 'react-icons/fa';
-import logo1 from '../assets/Logo-1.webp';
-import logo2 from '../assets/Logo-2.webp';
-import logo3 from '../assets/Logo-3.webp';
-import logo4 from '../assets/Logo-4.webp';
+import { FaCamera, FaWhatsapp } from 'react-icons/fa';
+import {
+  LuBadgeCheck,
+  LuClock3,
+  LuMapPin,
+  LuShieldCheck,
+} from 'react-icons/lu';
 import heroBgWide from '../assets/hero.webp'; 
 
 // Dodajemo city i state kao props sa default vrednostima
@@ -11,22 +13,22 @@ const Hero = ({ city, state }) => {
   
   const infoCards = [
     {
-      icon: <img src={logo4} alt="Vor-Ort Service" className="w-full h-full object-cover scale-[3.5] object-[center_40%] -ml-1.5" />,
+      icon: <LuMapPin />,
       title: "VOR-ORT SERVICE",
       desc: "Wir kommen zu Ihnen nach Hause, zur Arbeit oder auf die Straße."
     },
     {
-      icon: <img src={logo2} alt="Kostenlos Prüfen" className="w-full h-full object-cover scale-[3] object-[center_50%]" />,
+      icon: <LuShieldCheck />,
       title: "KOSTENLOS PRÜFEN",
       desc: "Mit Teilkasko oft 0 € Kosten – wir übernehmen die komplette Abwicklung."
     },
     {
-      icon: <img src={logo1} alt="Schnell & Effizient" className="w-full h-full object-cover scale-[3.3] object-[center_41%]" />,
+      icon: <LuClock3 />,
       title: "SCHNELL & EFFIZIENT",
       desc: "Die meisten Reparaturen oder Austausche in weniger als 24h erledigt."
     },
     {
-      icon: <img src={logo3} alt="Profis mit Erfahrung" className="w-full h-full object-cover scale-[3] object-[center_42%]" />,
+      icon: <LuBadgeCheck />,
       title: "PROFIS MIT ERFAHRUNG",
       desc: "Zertifizierte Techniker & hochwertige Materialien in OE-Qualität."
     }
@@ -34,6 +36,7 @@ const Hero = ({ city, state }) => {
 
   return (
     <section 
+      id="startseite"
       className="relative w-full min-h-[850px] lg:h-[95vh] bg-cover bg-center bg-no-repeat flex flex-col justify-between pt-24 pb-12 px-4 md:px-16 overflow-hidden bg-[#0b0c10]"
       style={{ backgroundImage: `url(${heroBgWide})` }}
     >
@@ -83,10 +86,15 @@ const Hero = ({ city, state }) => {
 
         {/* Dugmad (Ostaju ista, samo prilagođen tekst za grad) */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <button className="flex items-center justify-center space-x-3 bg-smart-red hover:bg-smart-red-hover text-white px-6 py-3.5 rounded-xl font-bold text-sm transition shadow-lg shadow-smart-red/40 active:scale-95">
-            <FaCalendarAlt />
+          <a
+            href="https://wa.me/4915755092629"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center space-x-3 bg-[#25D366] hover:bg-[#1fb85a] text-white px-6 py-3.5 rounded-xl font-bold text-sm transition shadow-lg shadow-[#25D366]/30 active:scale-95"
+          >
+            <FaWhatsapp className="text-lg" />
             <span>{city ? `Termin in ${city} buchen` : "Jetzt Termin buchen"}</span>
-          </button>
+          </a>
           
           <button className="flex items-center justify-center space-x-3 bg-black/60 hover:bg-black/80 text-gray-200 px-6 py-3.5 rounded-xl font-bold text-sm transition border border-gray-700 backdrop-blur-md active:scale-95">
             <FaCamera />
@@ -99,7 +107,7 @@ const Hero = ({ city, state }) => {
       <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-16 md:mt-0">
         {infoCards.map((card, index) => (
           <div key={index} className="bg-[#12141c]/95 border border-gray-800/80 rounded-xl p-5 flex items-center space-x-4 shadow-2xl backdrop-blur-md transition-all duration-300 hover:border-smart-red/50 hover:-translate-y-1">
-            <div className="w-16 h-16 rounded-full border-2 border-smart-red/40 bg-[#0b0c10] flex items-center justify-center shrink-0 shadow-lg overflow-hidden">
+            <div className="w-16 h-16 rounded-full border border-smart-red bg-black/40 text-[30px] text-white flex items-center justify-center shrink-0 shadow-[0_0_0_4px_rgba(229,9,20,0.16),0_0_24px_rgba(229,9,20,0.75),inset_0_0_18px_rgba(229,9,20,0.2)]">
               {card.icon}
             </div>
             <div className="flex-1">

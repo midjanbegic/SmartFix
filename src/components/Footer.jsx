@@ -6,7 +6,7 @@ import Logo from '../assets/logo.png'; // Ako imaš logo
 
 const Footer = () => {
   return (
-    <footer className="bg-[#050505] text-gray-400 py-10 border-t border-gray-800">
+    <footer id="kontakt" className="bg-[#050505] text-gray-400 py-10 border-t border-gray-800">
       <div className="max-w-[1400px] mx-auto px-6 flex flex-wrap lg:flex-nowrap justify-between items-start gap-12">
         
         {/* 1. LOGO & INFO */}
