@@ -24,100 +24,100 @@ const packageData = {
     kicker: 'Steinschlag Reparatur',
     label: 'BASIC',
     title: 'Steinschlag reparieren, bevor aus einem Punkt ein Riss wird.',
-    lead: 'Das Basic Paket ist fuer kleine Schaeden mit grosser Wirkung: SmartFix prueft deine Windschutzscheibe, repariert geeignete Steinschlaege professionell und bringt Sicht, Sicherheit und Kostenklaerung in einen sauberen Ablauf.',
+    lead: 'SmartFix prüft deine Windschutzscheibe, repariert geeignete Steinschläge professionell und bringt Sicht, Sicherheit und Kostenklärung in einen sauberen Ablauf. Ein Steinschlag im Sichtfeld des Fahrers darf gemäß den geltenden Reparaturrichtlinien und den Anforderungen des § 40 StVZO nicht repariert werden. In diesem Fall ist ein Austausch der Frontscheibe erforderlich.',
     image: BasicHero,
     price: '0 EUR',
     priceSub: 'mit Teilkasko moeglich',
     whatsapp: 'Hallo SmartFix, ich moechte einen Termin fuer das SmartFix Basic Paket anfragen.',
     seoTitle: 'SmartFix Basic | Steinschlag Reparatur und Autoglas Check',
     seoDescription: 'SmartFix Basic fuer Steinschlag Reparatur, Scheibenreinigung, Reifen- und Wischwasser-Check. Autoscheibe kostenlos pruefen lassen und WhatsApp Termin sichern.',
-    stats: ['unter 30 Min.', 'Smart Repair', 'Teilkasko Hilfe'],
+    stats: ['unter 30 Min.', 'Reparatur', 'Teilkasko 0 EUR '],
     highlights: [
-      'Smart Repair bei geeignetem Steinschlag',
+      'Reparatur bei geeignetem Steinschlag',
       'Schnelle Reparatur in kurzer Zeit',
-      'Smart Clean: Frontscheibe, Seitenscheiben und vorne saugen',
-      'Smart Check: Reifenhoehe und Wischwasserfuellung',
+      'Service Check: Reifenhoehe und Wischwasserfuellung',
       'Unterstuetzung bei der Teilkasko-Abwicklung'
     ],
     included: [
       ['Smart Repair', 'Professionelle Scheibenreparatur bei reparaturfaehigem Steinschlag.'],
       ['Smart Clean', 'Frontscheibe und Seitenscheiben reinigen, vorderen Bereich saugen.'],
       ['Smart Check', 'Kurzer Sicherheitsblick auf Reifenhoehe und Wischwasser.'],
-      ['Smart Costs', 'Bei passender Teilkasko koennen fuer die Reparatur 0 EUR direkte Kosten entstehen.']
+      ['Smart Costs', 'Bei passender Teilkasko entstehen keine Kosten.']
     ],
     storyTitle: 'Der schnelle Sicherheits-Reset',
-    story: 'Ein Steinschlag sieht oft harmlos aus, kann aber durch Kaelte, Hitze oder Vibrationen groesser werden. SmartFix Basic ist deshalb nicht nur Reparatur, sondern eine schnelle Entscheidung: pruefen, reparieren, reinigen und wieder ruhig fahren.',
+    story: 'Ein Steinschlag sieht oft harmlos aus, kann aber durch Kälte, Hitze oder Vibrationen grösser werden. SmartFix Basic ist deshalb nicht nur Reparatur, sondern eine schnelle Entscheidung: prüfen, reparieren, reinigen und wieder ruhig fahren.',
     note: 'Ob eine Reparatur moeglich ist, haengt von Groesse und Position des Schadens ab.',
     steps: ['Schaden per WhatsApp senden', 'Kostenlos pruefen lassen', 'Scheibe reparieren und Fahrzeug kurz checken']
   },
   clear: {
     name: 'SmartFix Clear',
-    kicker: 'Scheibentausch in OE-Qualitaet',
+    kicker: 'Scheibentausch in OE-Qualität',
     label: 'CLEAR',
     title: 'Wenn Reparatur nicht reicht, braucht die neue Scheibe ein sauberes System.',
-    lead: 'Clear ist fuer Schaeden gedacht, bei denen ein Austausch die bessere Loesung ist. Du bekommst hochwertigen Scheibentausch, saubere Montage, Reinigung und eine transparente Klaerung der Kosten je nach Versicherung oder Selbstbeteiligung.',
+    lead: 'Clear ist für Schäden gedacht, bei denen ein Austausch die einzig mögliche Lösung ist. Sie bekommen einen hochwertigen Scheibenaustausch, saubere Montage, Reinigung und eine transparente Klärung der Kosten je nach Versicherung oder Selbstbeteiligung.',
     image: ClearHero,
     price: '0 EUR',
-    priceSub: 'oder Selbstbeteiligung',
+    priceSub: 'oder SELBSTBETEILIGUNG',
     whatsapp: 'Hallo SmartFix, ich moechte einen Termin fuer das SmartFix Clear Paket anfragen.',
     seoTitle: 'SmartFix Clear | Autoscheibe wechseln und Scheibentausch',
-    seoDescription: 'SmartFix Clear fuer hochwertigen Autoscheiben Austausch in OE-Qualitaet, Reinigung, Wischer-Check und faire Kostenklaerung per WhatsApp.',
-    stats: ['OE-Qualitaet', 'Clean Check', 'Kostenklarheit'],
+    seoDescription: 'SmartFix Clear fuer hochwertigen Autoscheiben Austausch in OE-Qualität, Reinigung, Wischer-Check und faire Kostenklaerung per WhatsApp.',
+    stats: ['OE-Qualität', 'Garantie', 'Kostenklarheit'],
     highlights: [
-      'Hochwertiger Scheibenaustausch in OE-Qualitaet',
-      'Ideal bei Rissen, Sichtfeld-Schaeden oder groesseren Bruechen',
+      'Hochwertiger Scheibenaustausch in OE-Qualität',
+      'Ideal bei Rissen, Sichtfeld-Schäden oder groesseren Bruechen',
       'Alle Scheiben reinigen und Innenraum vorne saugen',
+      'Empfehlung: Safe Drive Plus Zusatzpaket',
       'Wischer, Wischwasser und Reifenhoehe pruefen',
       'Klare Kostenuebersicht je nach Schaden und Selbstbeteiligung'
     ],
     included: [
-      ['Change', 'Austausch der beschaedigten Scheibe in hochwertiger Qualitaet.'],
-      ['Clean', 'Alle Scheiben reinigen und den Innenraum vorne saugen.'],
+      ['Austausch', 'Austausch der beschaedigten Scheibe in hochwertiger Qualitaet.'],
+      ['Service', 'Alle Scheiben reinigen und den Innenraum vorne saugen.'],
       ['Check', 'Wischer, Wischwasser und Reifenhoehe kontrollieren.'],
-      ['Costs', 'Kostenweg transparent erklaeren: Teilkasko, Selbstbeteiligung oder Direktzahlung.']
+      ['Kosten und Garantie', 'Kostenweg transparent erklären: Teilkasko, Selbstbeteiligung oder Direktzahlung.']
     ],
     storyTitle: 'Mehr als nur Glas tauschen',
     story: 'Eine neue Scheibe muss dicht, sauber und sicher passen. Gleichzeitig sollen Wischerbild, Sicht und Fahrzeugzustand stimmen. SmartFix Clear verbindet den eigentlichen Scheibentausch deshalb mit einem sichtbaren Vorher-Nachher-Ergebnis und klarer Kommunikation zu den Kosten.',
     note: 'Je nach Schaden sind 0 EUR, Selbstbeteiligung oder direkte Zahlung moeglich.',
-    steps: ['Foto und Fahrzeugdaten senden', 'Reparatur oder Austausch klaeren', 'Scheibe wechseln und sauber uebergeben']
+    steps: ['Foto und Fahrzeugdaten senden', 'Reparatur oder Austausch klaeren', 'Scheibe wechseln und sauber übergeben']
   },
   'elite-24h': {
     name: 'SmartFix Elite 24h',
     kicker: 'Autoglas Notfallservice',
     label: 'ELITE 24H',
-    title: 'Premium Hilfe fuer Front-, Seiten- und Heckscheiben, wenn es schnell gehen muss.',
-    lead: 'Elite 24h ist das Paket fuer dringende Autoglas-Schaeden. SmartFix koordiniert Reparatur oder Austausch, kuemmert sich um Reinigung, Check, Innenraum-Extras und hilft dir, schnell wieder sicher unterwegs zu sein.',
+    title: 'Premium Hilfe für Front, Seiten und Heckscheiben, wenn es schnell gehen muss.',
+    lead: 'Elite 24h ist das Paket fuer dringende Autoglas-Schäden. SmartFix koordiniert Austausch, kümmert sich um Reinigung, Check, Innenraum-Extras und hilft Ihnen, schnell wieder sicher unterwegs zu sein.',
     image: EliteHero,
     price: '0 EUR',
     priceSub: 'je nach Schaden',
     whatsapp: 'Hallo SmartFix, ich brauche Hilfe mit dem SmartFix Elite 24h Paket.',
     seoTitle: 'SmartFix Elite 24h | Autoglas Notfallservice und Scheibentausch',
     seoDescription: 'SmartFix Elite 24h fuer Autoglas Notfaelle, Frontscheibe, Seitenscheibe, Heckscheibe, Reparatur oder Austausch, Reinigung und Premium Check.',
-    stats: ['24h Service', 'Mobil & schnell', 'VIP Check'],
+    stats: ['7/24h Service', 'Mobil', 'Schnell + Sauber'],
     highlights: [
-      '24h Service fuer dringende Autoglas-Schaeden',
-      'Reparatur oder Scheibentausch in OE-Qualitaet',
-      'Hilfe bei Frontscheibe, Seitenscheibe und Heckscheibe',
-      'Alle Scheiben reinigen, Innenraum vorne saugen und Cockpit reinigen',
+      '24h Service fuer dringende Autoglas-Schäden',
+      'Scheibentausch in OE-Qualität',
+      'Seitenscheibe und Heckscheibe',
+      'Alle Scheiben reinigen, Innenraum vorne saugen',
       'Innenraumfilter-Check, Air Fresh und Premium Wischer moeglich'
     ],
     included: [
-      ['Repair or Change', 'Reparatur oder Austausch passend zum Schadensbild.'],
-      ['Clean', 'Scheiben reinigen, Innenraum vorne saugen und Cockpit auffrischen.'],
+      ['Austausch', 'AUSTAUSCH passend zum Schadensbild.'],
+      ['Service', 'Scheiben reinigen, Innenraum komplett saugen.'],
       ['Check', 'Wischer, Wischwasser, Reifenhoehe und Innenraumfilter pruefen.'],
-      ['Costs', 'Faire Kostenklaerung je nach Versicherung, Schaden und Selbstbeteiligung.']
+      ['Kosten und Garantie', 'Faire Kostenklaerung je nach Versicherung, Schaden und Selbstbeteiligung.']
     ],
     storyTitle: 'Der Service fuer Situationen, die nicht warten',
-    story: 'Bei Seiten- oder Heckscheiben, starken Rissen oder akuten Sichtproblemen zaehlt Tempo. Elite 24h ist als kompletter Ablauf gedacht: melden, einschaetzen, Termin koordinieren, Glasproblem loesen und das Fahrzeug mit Premium-Check zurueckgeben.',
+    story: ' zählt Tempo. Elite 24h ist als kompletter Ablauf gedacht: melden, Termin koordinieren, Glasproblem lösen und das Fahrzeug mit SICHERHEIT zurueckgeben.',
     note: '24h Verfuegbarkeit kann von Fahrzeugtyp, Glasart und Teileverfuegbarkeit abhaengen.',
-    steps: ['Notfall per WhatsApp melden', '24h Loesung koordinieren', 'Reparatur oder Austausch mit Premium Check']
+    steps: ['Notfall per WhatsApp melden', '24h Loesung koordinieren', 'Austausch mit Premium Check']
   }
 };
 
 const addons = [
-  ['HX Aqua', 'Scheibenversiegelung fuer bessere Sicht bei Regen.', '39,99 EUR'],
-  ['Premium Plus', 'HX Aqua plus Premium Scheibenwischer vorne von Bosch.', '79,98 EUR'],
-  ['Deluxe Elite', 'HX Aqua, Wischer vorne und hinten, Innenraumfilter und Air Fresh.', '169,97 EUR']
+  ['Safe View', 'Scheibenversiegelung fuer bessere Sicht bei Regen.', '39 EUR'],
+  ['Safe Drive Plus', 'Safe View plus Premium Scheibenwischer vorne von Bosch.', '79 EUR'],
+  ['Elite Protect', 'Safe View, Wischer vorne und hinten, Innenraumfilter und Air Fresh.', '169 EUR']
 ];
 
 const iconMap = [FaTools, FaMagic, FaShieldAlt, FaEuroSign];
@@ -196,7 +196,7 @@ const PackageDetailPage = () => {
                 </div>
               </div>
 
-              <div className="relative hidden lg:block">
+              {/* <div className="relative hidden lg:block">
                 <div className="absolute -inset-4 border border-smart-red/20 rounded-2xl rotate-2"></div>
                 <div className="relative bg-black/62 border border-white/15 rounded-2xl p-6 backdrop-blur-xl shadow-2xl">
                   <div className="flex items-center justify-between border-b border-white/10 pb-5 mb-5">
@@ -227,7 +227,7 @@ const PackageDetailPage = () => {
                     Foto vom Schaden senden, Empfehlung bekommen und den passenden Termin direkt sichern.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -291,7 +291,7 @@ const PackageDetailPage = () => {
               <div className="bg-[#12141c] border border-gray-800 rounded-2xl p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-7">
                   <FaClock className="text-smart-red" />
-                  <h2 className="text-2xl md:text-3xl font-black">So laeuft es ab</h2>
+                  <h2 className="text-2xl md:text-3xl font-black">So läuft es ab</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {pkg.steps.map((step, index) => (
@@ -337,7 +337,7 @@ const PackageDetailPage = () => {
 
               <div className="bg-smart-red/10 border border-smart-red/30 rounded-2xl p-5">
                 <div className="font-black text-smart-red mb-2">Wichtiger Hinweis</div>
-                <p className="text-sm text-gray-300 leading-relaxed">{pkg.note}</p>
+                <p className="text-xl text-gray-300 leading-relaxed">{pkg.note}</p>
               </div>
             </aside>
           </div>

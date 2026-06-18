@@ -20,7 +20,7 @@ const Hero = ({ city, state }) => {
     {
       icon: <LuShieldCheck />,
       title: "KOSTENLOS PRÜFEN",
-      desc: "Mit Teilkasko oft 0 € Kosten – wir übernehmen die komplette Abwicklung."
+      desc: "Mit Teilkasko oft 0€ Kosten (Selbstbeteiligung)  wir übernehmen die komplette Abwicklung."
     },
     {
       icon: <LuClock3 />,
@@ -56,7 +56,7 @@ const Hero = ({ city, state }) => {
           ) : (
             <>
               Autoglas-Reparatur &<br />
-              <span className="text-smart-red font-black">Scheibenaustausch</span> vor Ort.
+              <span className="text-smart-red font-black">Scheibenaustausch</span> vor Ort Mobile Service.
             </>
           )}
         </h1>
@@ -80,7 +80,7 @@ const Hero = ({ city, state }) => {
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-smart-red text-xl font-black">✓</span>
-            <span>Mobiler Vor-Ort-Service (Mit Teilkasko oft 0 € Kosten)</span>
+            <span>Mobiler Vor-Ort-Service (Mit Teilkasko oft 0 € Kosten eventuel Selbstbeteiligung)</span>
           </div>
         </div>
 

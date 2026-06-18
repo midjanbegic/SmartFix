@@ -11,12 +11,13 @@ const Packages = () => {
       slug: 'basic',
       badge: 'SMARTFIX',
       hookWord: 'STEINSCHLAG',
-      titleSuffix: 'Loesung Basic',
+      titleSuffix: 'Lösung REPARATUR - Basic',
       features: [
-        'Smart Repair bei Steinschlag',
+        'REPARATUR bei Steinschlag',
         'Schnelle Reparatur in unter 30 Minuten',
-        'Smart Check (Gummi & Fluessigkeiten)',
-        '0 EUR mit Teilkasko (179,49 EUR ohne Versicherung)'
+        'Sofortiger Austausch vor Ort oder mobil',
+        'Service Check',
+        '0 EUR mit Teilkasko (149,95 EUR ohne Versicherung)'
       ],
       price: '0 EUR',
       priceSub: 'mit Teilkasko',
@@ -26,33 +27,34 @@ const Packages = () => {
     {
       slug: 'clear',
       badge: 'SMARTFIX',
-      hookWord: 'AUSTAUSCH',
-      titleSuffix: 'Loesung Clear',
+      hookWord: 'Grössere Riss oder Risse',
+      titleSuffix: 'Lösung AUSTAUSCH - Clear',
       features: [
         'Hochwertiger Scheibenaustausch',
+        'Sofortiger Austausch vor Ort oder mobil',
         'Perfekte Kalibrierung der Kamera-Systeme',
-        'Service Check (alle Scheiben + Innenraum)',
-        'Empfohlen: Safe Drive Plus'
+        'Service Check ',
+        'Empfohlen: Safe Drive Plus' // MALO VECE
       ],
       price: '0 EUR',
-      priceSub: 'oder Selbstbeteiligung',
+      priceSub: 'oder SELBSTBETEILIGUNG',
       bgImage: ClearImg,
       imagePosition: '62% center'
     },
     {
       slug: 'elite-24h',
       badge: 'SMARTFIX',
-      hookWord: 'SEITEN- & HECKSCHEIBE',
-      titleSuffix: 'Loesung Elite 24h',
+      hookWord: 'SEITEN & HECKSCHEIBE',
+      titleSuffix: 'Lösung AUSTAUSCH - Elite 24h',
       subTitle: '24H EMERGENCY SERVICE',
       features: [
         '24h Notdienst (7 Tage die Woche erreichbar)',
         'Sofortiger Austausch vor Ort oder mobil',
-        'Service Check (alle Scheiben + Cockpit)',
+        'Service Check',
         'Direkte Abrechnung mit der Versicherung'
       ],
       price: '0 EUR',
-      priceSub: 'oder Selbstbeteiligung',
+      priceSub: 'oder SELBSTBETEILIGUNG',
       bgImage: EliteImg,
       imagePosition: '72% center'
     }
@@ -64,7 +66,7 @@ const Packages = () => {
         <h2 className="text-2xl md:text-3xl font-black tracking-widest uppercase flex items-center justify-center space-x-3">
           <span className="w-8 h-[2px] bg-smart-red"></span>
           <span>
-            Unsere <span className="text-smart-red">Pakete</span>
+            Ihre <span className="text-smart-red">Lösungen</span>
           </span>
           <span className="w-8 h-[2px] bg-smart-red"></span>
         </h2>

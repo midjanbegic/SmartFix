@@ -24,8 +24,8 @@ const HomePage = () => (
       <Hero />
       <Packages />
       <ShopSection />
-      <BusinessSolutions />
       <AboutUs />
+      {/* <BusinessSolutions /> */}
     </main>
   </>
 );

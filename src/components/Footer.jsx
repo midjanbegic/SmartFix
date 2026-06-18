@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="flex items-center justify-end gap-2"><span className="text-smart-red"><LuMapPin size={14}/></span> Deutschlandweiter Vor-Ort-Service</div>
             <div className="flex items-center justify-end gap-2"><span className="text-smart-red"><LuPhone size={14}/></span> +49 157 55092629</div>
             <div className="flex items-center justify-end gap-2"><span className="text-smart-red"><LuMail size={14}/></span> info@smartfix-autoglas.de</div>
-            <div className="flex items-center justify-end gap-2"><span className="text-smart-red"><LuClock size={14}/></span> Mo - Sa: 08:00 - 18:00 Uhr</div>
+            <div className="flex items-center justify-end gap-2"><span className="text-smart-red"><LuClock size={14}/></span> Mo - Sa: 08:00 - 18:00 Uhr ( 24/7 Service )</div>
           </div>
           <img src={GermanyMap} alt="Map" className="h-28 object-contain" />
         </div>
